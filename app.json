@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#F4EFE6"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "ai.openclaw.sevenmw",
@@ -35,6 +37,11 @@
     },
     "experiments": {
       "baseUrl": "/7mw"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b816de69-d353-46ab-8102-15c11e10e105"
+      }
     }
   }
 }
