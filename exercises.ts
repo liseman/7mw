@@ -5,21 +5,21 @@ export type Exercise = {
   tip: string;
 };
 
-// UC Berkeley UHS "7 Minute Workout" handout — the 12-exercise ACSM
-// high-intensity circuit. Order alternates total body / lower / upper / core.
+// 12-exercise high-intensity circuit, no equipment needed. Order alternates
+// total body / lower / upper / core.
 export const EXERCISES: Exercise[] = [
   { slug: 'jumping-jacks', name: 'JUMPING JACKS', speech: 'Jumping jacks', tip: 'Land soft. Full arm swing.' },
-  { slug: 'wall-sit', name: 'WALL SIT', speech: 'Wall sit', tip: 'Knees at 90. Back flat on the wall.' },
+  { slug: 'steam-engine', name: 'STEAM ENGINE', speech: 'Steam engine', tip: 'Hands behind head. Elbow to opposite knee.' },
   { slug: 'push-ups', name: 'PUSH-UPS', speech: 'Push ups', tip: 'Straight line, head to heels.' },
   { slug: 'crunches', name: 'CRUNCHES', speech: 'Abdominal crunches', tip: 'Chin off chest. Slow up, slow down.' },
-  { slug: 'step-ups', name: 'STEP-UPS', speech: 'Step ups onto a chair', tip: 'Whole foot on the chair. Alternate legs.' },
+  { slug: 'hip-raises', name: 'HIP RAISES', speech: 'Hip raises', tip: 'Drive through heels. Squeeze at the top.' },
   { slug: 'squats', name: 'SQUATS', speech: 'Squats', tip: 'Hips back. Weight in your heels.' },
-  { slug: 'dips', name: 'TRICEPS DIPS', speech: 'Triceps dips on a chair', tip: 'Elbows point straight back.' },
+  { slug: 'tricep-lifts', name: 'TRICEP LIFTS', speech: 'Tricep lifts', tip: 'Elbows point straight back.' },
   { slug: 'plank', name: 'PLANK', speech: 'Plank', tip: 'Squeeze glutes. Do not sag.' },
   { slug: 'high-knees', name: 'HIGH KNEES', speech: 'High knees, running in place', tip: 'Knees above your hips. Fast.' },
   { slug: 'lunges', name: 'LUNGES', speech: 'Lunges', tip: 'Front knee over ankle. Alternate.' },
   { slug: 'pushup-rotations', name: 'PUSH-UP + ROTATION', speech: 'Push up and rotation', tip: 'Push up, then reach for the sky.' },
-  { slug: 'side-plank', name: 'SIDE PLANK', speech: 'Side plank', tip: 'Hips high. Switch sides at fifteen.' },
+  { slug: 'side-plank', name: 'SIDE PLANK', speech: 'Side plank. Fifteen seconds each side', tip: 'Hips high. Switch sides at fifteen.' },
 ];
 
 export const WORK_SEC = 30;

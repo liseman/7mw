@@ -191,12 +191,12 @@ const ANIMS = {
       { ms: 330, pose: { ...STAND, face: 0, hy: 145, lsh: -152, lel: -166, rsh: 152, rel: 166, lhip: -21, lknee: -21, rhip: 21, rknee: 21 } },
     ],
   },
-  'wall-sit': {
-    sweat: true,
-    props: ['wall'],
+  'steam-engine': {
     frames: [
-      { ms: 260, pose: { hx: 98, hy: 176, torso: 2, lsh: 28, lel: 38, rsh: 32, rel: 42, lhip: 86, lknee: 0, rhip: 90, rknee: 4, face: 1 } },
-      { ms: 260, pose: { hx: 98, hy: 177, torso: 4, lsh: 30, lel: 40, rsh: 34, rel: 44, lhip: 87, lknee: 1, rhip: 91, rknee: 5, face: 1 } },
+      { ms: 430, pose: { hx: 120, hy: 150, torso: 12, head: -10, lsh: -118, lel: 112, rsh: 122, rel: -112, lhip: 96, lknee: 24, rhip: -6, rknee: -6, face: 1 } },
+      { ms: 430, pose: { hx: 120, hy: 152, torso: 2, head: -2, lsh: -122, lel: 116, rsh: 118, rel: -108, lhip: -4, lknee: -4, rhip: 4, rknee: 4, face: 1 } },
+      { ms: 430, pose: { hx: 120, hy: 150, torso: 12, head: -10, lsh: -118, lel: 112, rsh: 122, rel: -112, lhip: -6, lknee: -6, rhip: 96, rknee: 24, face: 1 } },
+      { ms: 430, pose: { hx: 120, hy: 152, torso: 2, head: -2, lsh: -122, lel: 116, rsh: 118, rel: -108, lhip: -4, lknee: -4, rhip: 4, rknee: 4, face: 1 } },
     ],
   },
   'push-ups': {
@@ -212,13 +212,11 @@ const ANIMS = {
       { ms: 520, pose: { hx: 130, hy: 197, torso: -56, head: -16, lsh: -150, lel: -100, rsh: -146, rel: -96, lhip: 116, lknee: 8, rhip: 112, rknee: 4, face: -1 } },
     ],
   },
-  'step-ups': {
-    props: ['chair-right'],
+  'hip-raises': {
+    props: ['mat'],
     frames: [
-      { ms: 480, pose: { ...STAND, hx: 86 } },
-      { ms: 480, pose: { hx: 90, hy: 152, torso: 10, lsh: -20, lel: -24, rsh: 42, rel: 30, lhip: -2, lknee: -2, rhip: 56, rknee: 84, face: 1 } },
-      { ms: 560, pose: { hx: 142, hy: 117, torso: 4, lsh: -10, lel: -12, rsh: 12, rel: 14, lhip: -3, lknee: -3, rhip: 3, rknee: 3, face: 1 } },
-      { ms: 480, pose: { hx: 90, hy: 152, torso: 10, lsh: -20, lel: -24, rsh: 42, rel: 30, lhip: -2, lknee: -2, rhip: 56, rknee: 84, face: 1 } },
+      { ms: 600, pose: { hx: 130, hy: 197, torso: -82, head: -8, lsh: 84, lel: 84, rsh: 80, rel: 80, lhip: 116, lknee: 8, rhip: 112, rknee: 4, face: -1 } },
+      { ms: 600, pose: { hx: 130, hy: 172, torso: -118, head: 28, lsh: 100, lel: 100, rsh: 96, rel: 96, lhip: 64, lknee: 8, rhip: 60, rknee: 4, face: -1 } },
     ],
   },
   squats: {
@@ -227,7 +225,7 @@ const ANIMS = {
       { ms: 560, pose: { hx: 112, hy: 178, torso: 18, head: -8, lsh: 84, lel: 84, rsh: 88, rel: 88, lhip: 58, lknee: -45, rhip: 62, rknee: -41, face: 1 } },
     ],
   },
-  dips: {
+  'tricep-lifts': {
     props: ['chair-left'],
     frames: [
       { ms: 540, pose: { hx: 118, hy: 184, torso: -14, lsh: 32, lel: -36, rsh: 38, rel: -42, lhip: 68, lknee: 32, rhip: 72, rknee: 36, face: 1 } },
@@ -272,10 +270,7 @@ const ANIMS = {
 
 function propParts(name) {
   const parts = [];
-  if (name === 'wall') {
-    parts.push(line(86, 64, 86, FLOOR_Y, BLUE, 9));
-    parts.push(line(86, 64, 86, FLOOR_Y, INK, 2));
-  } else if (name === 'chair-right' || name === 'chair-left') {
+  if (name === 'chair-right' || name === 'chair-left') {
     const [x1, x2] = name === 'chair-right' ? [128, 178] : [58, 108];
     parts.push(line(x1 + 4, 172, x1 + 4, FLOOR_Y, INK, 5));
     parts.push(line(x2 - 4, 172, x2 - 4, FLOOR_Y, INK, 5));

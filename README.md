@@ -2,7 +2,7 @@
 
 The dead-simple seven-minute workout. One button. Twelve exercises. No accounts, no ads, no data collection, no upsells.
 
-The workout is the classic 12-exercise high-intensity circuit from the [UC Berkeley UHS handout](https://uhs.berkeley.edu/sites/default/files/wellness-7minuteworkout.pdf): 30 seconds of work per exercise with a 10-second buffer between exercises, in this order — jumping jacks, wall sit, push-ups, crunches, step-ups, squats, triceps dips, plank, high knees, lunges, push-up + rotation, side plank.
+The workout is a 12-exercise high-intensity circuit, no equipment needed: 30 seconds of work per exercise with a 10-second buffer between exercises, in this order — jumping jacks, steam engine, push-ups, crunches, hip raises, squats, tricep lifts, plank, high knees, lunges, push-up + rotation, side plank (15 seconds per side, with a mid-cue to switch).
 
 Voice cues are pre-generated with ElevenLabs and bundled as assets; the app makes zero network calls at runtime. Each exercise has a hand-keyframed animation of an anime guy demonstrating the move (see `figure.js`).
 

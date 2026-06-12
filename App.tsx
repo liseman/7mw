@@ -11,7 +11,7 @@ import {
   View,
   useWindowDimensions,
 } from 'react-native';
-import { CUE_COUNT, CUE_DONE, CUE_GO, CUE_HALFWAY, CUE_NEXT, CUE_READY } from './cues';
+import { CUE_COUNT, CUE_DONE, CUE_GO, CUE_HALFWAY, CUE_NEXT, CUE_READY, CUE_SWITCH } from './cues';
 import { BUFFER_SEC, EXERCISES, TOTAL_SEC, WORK_SEC, buildPhases, type Phase } from './exercises';
 import { LukeAnime } from './LukeAnime';
 
@@ -35,7 +35,11 @@ function buildCues(phases: Phase[]): Cue[] {
       cues.push({ at: phase.startSec, asset: phase.exIndex === 0 ? CUE_READY : CUE_NEXT[slug] });
     } else {
       cues.push({ at: phase.startSec, asset: CUE_GO });
-      cues.push({ at: phase.startSec + WORK_SEC / 2, asset: CUE_HALFWAY });
+      // Side plank is 15 seconds per side; the midpoint cue says to switch.
+      cues.push({
+        at: phase.startSec + WORK_SEC / 2,
+        asset: slug === 'side-plank' ? CUE_SWITCH : CUE_HALFWAY,
+      });
     }
     for (const n of [3, 2, 1]) {
       cues.push({ at: phase.endSec - n, asset: CUE_COUNT[n] });

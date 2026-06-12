@@ -21,6 +21,7 @@ export function buildCueTexts() {
     'ready.mp3': `Seven minute workout. Twelve exercises. First up: ${exercises[0].speech.toLowerCase()}. Get ready!`,
     'go.mp3': 'Go!',
     'halfway.mp3': 'Halfway!',
+    'switch.mp3': 'Switch sides!',
     'done.mp3': 'Done! Workout complete. Nice work — see you tomorrow.',
     '3.mp3': '3.',
     '2.mp3': '2.',
