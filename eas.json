@@ -19,6 +19,12 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "language": "en-US",
+        "sku": "ai.openclaw.sevenmw",
+        "companyName": "luke iseman"
+      }
+    }
   }
 }
