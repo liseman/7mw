@@ -35,9 +35,6 @@
       "output": "single",
       "favicon": "./assets/favicon.png"
     },
-    "experiments": {
-      "baseUrl": "/7mw"
-    },
     "extra": {
       "eas": {
         "projectId": "b816de69-d353-46ab-8102-15c11e10e105"

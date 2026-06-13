@@ -11,7 +11,7 @@
     "audio:regen": "node ./scripts/generate-audio.mjs",
     "audio:placeholders": "node ./scripts/generate-placeholder-audio.mjs",
     "icons:regen": "node ./scripts/render-icons.mjs",
-    "build:web": "expo export --platform web && cp dist/index.html dist/404.html",
+    "build:web": "EXPO_WEB_BASE_URL=/7mw expo export --platform web && cp dist/index.html dist/404.html",
     "build:ios": "npx eas-cli build --platform ios --profile production",
     "submit:ios": "npx eas-cli submit --platform ios --profile production"
   },
