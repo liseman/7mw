@@ -21,6 +21,7 @@
   "submit": {
     "production": {
       "ios": {
+        "ascAppId": "6779848788",
         "language": "en-US",
         "sku": "ai.openclaw.sevenmw",
         "companyName": "luke iseman"
