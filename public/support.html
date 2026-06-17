@@ -3,29 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>7MW — Support</title>
+<title>7MW — The Seven-Minute Workout</title>
+<meta name="description" content="7MW is the dead-simple seven-minute workout. One button, twelve bodyweight exercises, voice-guided. No ads, no accounts, no data collection.">
 <style>
-  body { background:#F4EFE6; color:#101010; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; max-width:640px; margin:48px auto; padding:0 20px; line-height:1.55; }
-  h1 { font-size:44px; letter-spacing:-2px; margin-bottom:0; }
-  h2 { margin-top:36px; border-bottom:4px solid #101010; padding-bottom:4px; }
-  .chip { display:inline-block; background:#FF5A00; border:3px solid #101010; padding:2px 10px; font-weight:bold; }
-  a { color:#1B3BFF; }
+  :root { --paper:#F4EFE6; --ink:#101010; --orange:#FF5A00; --blue:#1B3BFF; }
+  * { box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink); font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; max-width:680px; margin:0 auto; padding:48px 20px 80px; line-height:1.55; }
+  h1 { font-size:64px; letter-spacing:-4px; margin:0; }
+  h2 { font-size:26px; margin-top:52px; border-bottom:4px solid var(--ink); padding-bottom:6px; }
+  h3 { margin-top:28px; margin-bottom:4px; }
+  .tagline { font-size:15px; font-weight:bold; letter-spacing:2px; margin:4px 0 18px; }
+  .chip { display:inline-block; background:var(--orange); border:3px solid var(--ink); padding:3px 12px; font-weight:bold; letter-spacing:1px; }
+  .chip.blue { background:var(--blue); color:var(--paper); }
+  .props { list-style:none; padding:0; margin:22px 0; }
+  .props li { border:3px solid var(--ink); background:#fff; padding:10px 14px; margin-bottom:10px; font-weight:bold; }
+  ol.exercises { columns:2; -webkit-columns:2; padding-left:20px; font-weight:bold; }
+  .meta { font-size:13px; opacity:0.7; }
+  a { color:var(--blue); }
+  nav.toc { margin:24px 0 0; font-size:13px; font-weight:bold; letter-spacing:1px; }
+  footer { margin-top:60px; font-size:12px; opacity:0.7; border-top:3px solid var(--ink); padding-top:14px; }
 </style>
 </head>
 <body>
+
 <h1>7MW</h1>
-<p class="chip">SUPPORT</p>
+<p class="tagline">THE SEVEN-MINUTE WORKOUT</p>
+<p><span class="chip">START</span> &nbsp; <span class="chip blue">12 EXERCISES · 30s ON · 10s OFF</span></p>
 
-<h2>What is this?</h2>
-<p>7MW is the dead-simple seven-minute workout: one START button, twelve bodyweight exercises (30 seconds on, 10 seconds off), voice-guided. That's the whole app.</p>
+<p>7MW is the dead-simple seven-minute workout: one button, twelve bodyweight exercises, voice-guided from start to finish. No equipment. No setup. Press start and move. That's the whole app.</p>
 
-<h2>Privacy policy</h2>
-<p>7MW collects no data. There are no accounts, no analytics, no ads, no tracking, and the app makes no network requests. Nothing you do in the app leaves your device. There is nothing to delete because nothing is stored.</p>
+<nav class="toc">JUMP TO: <a href="#support">SUPPORT</a> · <a href="#privacy">PRIVACY</a></nav>
 
-<h2>Contact</h2>
-<p>Questions or problems: <a href="mailto:luke@lukeiseman.com">luke@lukeiseman.com</a></p>
+<ul class="props">
+  <li>NO ADS.</li>
+  <li>NO ACCOUNT.</li>
+  <li>NO DATA COLLECTION. NO TRACKING.</li>
+  <li>NO NETWORK. WORKS FULLY OFFLINE.</li>
+</ul>
 
-<h2>Source</h2>
-<p>The workout is the classic 12-exercise circuit popularized by the ACSM (see the <a href="https://uhs.berkeley.edu/sites/default/files/wellness-7minuteworkout.pdf">UC Berkeley UHS handout</a>). Consult a physician before starting any exercise program.</p>
+<h2>The workout</h2>
+<p>Twelve moves, 30 seconds of work each with a 10-second buffer between them, in order:</p>
+<ol class="exercises">
+  <li>Jumping jacks</li>
+  <li>Steam engine</li>
+  <li>Push-ups</li>
+  <li>Crunches</li>
+  <li>Hip raises</li>
+  <li>Squats</li>
+  <li>Tricep lifts</li>
+  <li>Plank</li>
+  <li>High knees</li>
+  <li>Lunges</li>
+  <li>Push-up + rotation</li>
+  <li>Side plank</li>
+</ol>
+
+<h2 id="support">Support</h2>
+
+<h3>What is this?</h3>
+<p>7MW is a free, no-frills seven-minute workout timer. It calls out each exercise, counts you down, and keeps your screen awake while you move. There are no menus to learn — just one START button.</p>
+
+<h3>How do I use it?</h3>
+<p>Open the app, press START, and follow the voice cues and the on-screen demonstration. Tap PAUSE any time. Side plank runs fifteen seconds per side, with a "switch sides" cue at the halfway mark.</p>
+
+<h3>Contact</h3>
+<p>Questions, bug reports, or feedback: <a href="mailto:luke@lukeiseman.com">luke@lukeiseman.com</a>. I read every message.</p>
+
+<h3>Health disclaimer</h3>
+<p>7MW is a high-intensity bodyweight circuit. Consult a physician before starting any exercise program. Stop if you feel pain, dizziness, or shortness of breath. You use the app at your own risk.</p>
+
+<h2 id="privacy">Privacy policy</h2>
+<p class="meta">Last updated: 17 June 2026</p>
+
+<h3>The short version</h3>
+<p>7MW collects nothing. There are no accounts, no analytics, no advertising, no tracking, and no third-party SDKs. The app makes no network requests of any kind. Everything happens on your device, and nothing you do ever leaves it.</p>
+
+<h3>Data we collect</h3>
+<p>None. We do not collect, store, transmit, sell, or share any personal data or usage data. We do not use cookies, device identifiers, or location data. The app has no servers and no backend, so there is nowhere for your information to go.</p>
+
+<h3>Data stored on your device</h3>
+<p>The app's voice cues and animations are bundled into the app itself. The app does not write any personal data to your device. There is nothing to export and nothing to delete, because nothing is stored about you.</p>
+
+<h3>Third parties</h3>
+<p>7MW shares no data with third parties because it has no data to share. The app integrates no analytics, advertising, crash-reporting, or social-media services.</p>
+
+<h3>Children's privacy</h3>
+<p>7MW is safe for all ages. Because the app collects no data from anyone, it collects no data from children.</p>
+
+<h3>Changes to this policy</h3>
+<p>If this policy ever changes, the updated version will be posted on this page with a new "last updated" date. Since the app collects no data, we do not anticipate material changes.</p>
+
+<h3>Privacy contact</h3>
+<p>Questions about privacy: <a href="mailto:luke@lukeiseman.com">luke@lukeiseman.com</a></p>
+
+<footer>
+  7MW — open and ad-free. Source: <a href="https://github.com/liseman/7mw">github.com/liseman/7mw</a>
+</footer>
+
 </body>
 </html>
